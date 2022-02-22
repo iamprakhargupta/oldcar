@@ -12,7 +12,7 @@
     <div style="color:black">
         <form action="{{ url_for('predict')}}" method="post">
             
-            <h2>Old Car Selling Price Predictive analysis</h2>
+            <h2>USED CARS PRICE RECOMMENDATION SYSTEM</h2>
             <h3>Year</h3>
             <input id="first" name="Year" type="number ">
             <h3>What is the Showroom Price?(In INR)</h3><br><input id="second" name="Present_Price" required="required">
@@ -28,8 +28,8 @@
                 <option value="Individual">Individual</option>
             </select>
             <h3>Transmission type</h3><br><select name="Transmission_Mannual" id="research" required="required">
-                <option value="Mannual">Manual Car</option>
-                <option value="Automatic">Automatic Car</option>
+                <option value="Mannual">Manual</option>
+                <option value="Automatic">Automatic</option>
             </select>
             <br><br><button id="sub" type="submit ">Calculate the Selling Price</button>
             <br>
@@ -59,7 +59,7 @@
         
         #research {
             font-size: 18px;
-            width: 100px;
+            width: 120px;
             height: 23px;
             top: 23px;
         }
@@ -120,7 +120,7 @@
         
         #sub {
             width: 120px;
-            height: 53px;
+            height: 60px;
             text-align: center;
             border-radius: 14px;
             font-size: 18px;
