@@ -19,6 +19,7 @@ def predict():
     if request.method == 'POST':
         Year = int(request.form['Year'])
         Present_Price=float(request.form['Present_Price'])
+        Present_Price=Present_Price/100000
         Kms_Driven=int(request.form['Kms_Driven'])
         Kms_Driven2=np.log(Kms_Driven)
         Owner=int(request.form['Owner'])
